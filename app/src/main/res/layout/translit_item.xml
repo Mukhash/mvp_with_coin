@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="7"
+    >
+    <LinearLayout
+        android:id="@+id/deleteLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="5">
+    <TextView
+        android:id="@+id/kirilTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:fontFamily="monospace"
+        android:text="ТекстНаКириллице"
+        android:layout_gravity="top|start"
+        android:textColor="#7C4DFF" />
+
+    <TextView
+        android:id="@+id/latinTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:fontFamily="monospace"
+        android:text="LatinText"
+        android:layout_gravity="bottom|start"
+        android:textColor="#505050" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textOff=""
+        android:textOn=""
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/selector"
+        />
+    <!--<ImageButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_star_black_24dp" />-->
+
+</LinearLayout>
